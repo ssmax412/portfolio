@@ -1,0 +1,350 @@
+@charset "utf-8";
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+    overflow: hidden;
+}
+
+/*header*/
+.navbar-brand{
+    font-size: 34px;
+    line-height: 22px;
+}
+.nav-item{
+    padding-right: 5px;
+    font-size: 17px;
+}
+
+/*main*/
+#home{
+    background-image: url(image/apples.jpg);
+    min-height: 80vh;
+}
+.big-bg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+.main {
+    font-size: 120px;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+    font-family: 'Libre Baskerville', serif;
+}
+
+/*About*/
+
+.myself img{
+    width: 450px;
+    height: 300px;
+}
+.h3{
+    font-size: 36px;
+    line-height: 47px;
+    font-weight: 700;
+    
+}
+.ab-sp span{
+    border-bottom: 2px solid #ECDF2B;
+}
+.about{
+    padding: 40px 0;
+}
+.txt p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    font-family: "Noto Sans Japanese", sans-serif;;
+}
+.intro{
+    margin-top: 40px;
+}
+
+
+/* LINE002 */
+.button_line002 a {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 160px;
+    padding: 10px 25px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    text-decoration: none;
+}
+.button_line002 a:before {
+    position: absolute;
+    content: '';
+    width: 80%;
+    height: 3px;
+    top: 90%;
+    left: 15px;
+    border-radius: 3px;
+    background: black;
+    transition: .2s;
+}
+.button_line002 a:hover:before {
+    top: calc(90% - 2px);
+}
+.button_line002 a:hover{
+    opacity: 0.7;
+}
+.contents{
+    padding-top: 40px;
+}
+/*Works*/
+.works{
+    padding: 40px 0;
+} 
+.works span{
+    border-bottom: 2px solid #ECDF2B;
+}
+.works p{
+    margin-top: 40px;
+    text-align: center;
+}
+.carousel{
+    margin: 20px 0;
+}
+h5{
+    font-size: 30px;
+    font-weight: 500;
+    font-family: "Noto Sans Japanese", sans-serif;;
+   
+}
+.carousel-item img:hover{
+    opacity: 0.8;
+}
+
+/* card */
+
+.card{
+    margin: 30px 0 30px 0;
+}
+.card-text h4{
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.card-title{
+    font-size: 26px;
+    font-family: "Noto Sans Japanese", sans-serif;;
+}
+.card-text{
+    font-size: 17px;
+    line-height: 32px;
+    font-weight: 400;
+    text-align: left!important;
+    margin: 0 0 10px 0!important;
+    
+}
+/* skills */
+.skills span{
+    border-bottom: 2px solid #ECDF2B;
+}
+.accordion{
+    padding: 40px 0;
+}
+.skill-explain{
+    margin-left: 20px;
+    font-size: 24px;
+    line-height: 20px;
+    font-family: "Noto Sans Japanese", sans-serif;;
+}
+.skill-list li{
+    padding: 10px;
+}
+.accordion-body p{
+    font-size: 18px;
+    line-height: 17px;
+    font-family: "Noto Sans Japanese", sans-serif;;
+}
+/*Footer*/
+footer p{
+    font-size: 16px;
+    line-height: 26px;
+}
+/*改行*/
+br{
+    display: block;
+}
+
+
+
+/*スマホ*/
+@media (max-width:769px) {
+.main{
+    padding: initial;
+    font-size: 50px;
+    
+}
+/*about*/
+.myself img{
+    max-width: 100%;
+    height: 300px;
+}
+.h3{
+    font-size: 27px;
+    line-height: 40px;
+}
+.txt p{
+    font-size: 16px;
+    line-height: 28px;
+}
+/*改行*/
+br{
+    display: block;
+}
+/* works */
+.card-title{
+    font-size: 20px;
+}
+.card-text{
+    font-size: 12px;
+}
+.skill-explain{
+    margin-left: 20px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.accordion-body p{
+    font-size: 18px;
+    line-height: 17px;
+}
+
+}
+
+/*ipad*/
+@media screen and (min-width:768px) and ( max-width:1022px) {
+    .main{
+        
+        font-size: 80px;
+    }
+    /*改行*/
+br{
+    display: block;
+}
+
+}
+
+
+/*ipad pro*/
+@media screen and (min-width:1024px) and ( max-width:1100px){
+    .main{
+       
+        font-size: 100px;
+    }
+    /*改行*/
+br{
+    display: block;
+}
+
+}
