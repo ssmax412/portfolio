@@ -117,6 +117,9 @@ hr {
 }
 
 /*main*/
+
+
+
 #home{
     background-image: url(image/apples.jpg);
     min-height: 80vh;
@@ -245,6 +248,17 @@ h5{
     margin: 0 0 10px 0!important;
     
 }
+.scroll-up {
+    opacity: 0; 
+    visibility: hidden;
+    transform: translateY(50px);
+    transition: all 1s;
+  }
+  .scroll-up.is-show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+  }
 /* skills */
 .skills span{
     border-bottom: 2px solid #ECDF2B;
@@ -265,6 +279,9 @@ h5{
     font-size: 18px;
     line-height: 17px;
     font-family: "Noto Sans Japanese", sans-serif;;
+}
+.accordion-body{
+    padding: 30px;
 }
 /*Footer*/
 footer p{
@@ -320,11 +337,11 @@ br{
     line-height: 17px;
 }
 .button_line002 a{
-    font-size: 1px;
+    font-size: 12px;
+
 
 }
 }
-
 /*ipad*/
 @media screen and (min-width:768px) and ( max-width:1022px) {
     .main{
